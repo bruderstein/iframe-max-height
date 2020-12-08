@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+        body {
+          font-size: 10px;
+        }
+
+        /* On Android Chrome, this max-height inside an iframe is calculated incorrectly
+         * reduce by 1px and it works
+         */
+        @media (max-height: 20px) {
+          .banner {
+            display: none;
+          }
+        }
+    </style>
+  </body>
+  <body>
+      <span class="banner">
+        This should be hidden for 20px height
+      </span>
+      <span class="show">
+        Always shown
+      </span>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <body>
+    <p>
+      An 40px height iframe (should show both messages)
+      <div>
+        <iframe height="40" width="200" src="/frame.html"></iframe>
+      </div>
+    </p>
+    <p>
+      **BUG (on android chrome)** A 20px height iframe (should show only show the "This is shown" message)
+      <div>
+        <iframe height="20" width="200" src="/frame.html"></iframe>
+      </div>
+    </p>
+
+    <p>
+      A 19px height iframe (should show only show the "This is shown" message)
+      <div>
+        <iframe height="19" width="200" src="/frame.html"></iframe>
+      </div>
+    </p>
+  </body>
+</html>
